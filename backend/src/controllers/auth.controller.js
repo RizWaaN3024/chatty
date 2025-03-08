@@ -28,7 +28,7 @@ export const signup = async (req, res) => {
             generateToken(newUser._id, res);
             await newUser.save();
 
-            res.statue(201).json({
+            res.status(201).json({
                 _id: newUser._id,
                 fullName: newUser.fullName,
                 email: newUser.email,
