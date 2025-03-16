@@ -26,6 +26,13 @@ const SignUpPage = () => {
     };
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const success = validateForm();
+
+        if ( true === success) {
+            signup(formData);
+        }
+        
     };
     return (
         <div className="min-h-screen grid lg:grid-cols-2">
