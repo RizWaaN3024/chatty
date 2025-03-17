@@ -29,10 +29,10 @@ const SignUpPage = () => {
 
         const success = validateForm();
 
-        if ( true === success) {
+        if (true === success) {
             signup(formData);
         }
-        
+
     };
     return (
         <div className="min-h-screen grid lg:grid-cols-2">
@@ -138,7 +138,7 @@ const SignUpPage = () => {
             </div>
 
             {/* Right Side */}
-            <AuthImagePattern 
+            <AuthImagePattern
                 title={"Join our community"}
                 subtitle={"Connect with friends, share moments, and stay in touch with your close ones"}
             />
