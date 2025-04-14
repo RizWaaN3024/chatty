@@ -9,6 +9,8 @@ const Sidebar = () => {
     useEffect(() => {
         getUsers();
     }, [getUsers])
+
+    if (isUserLoading) return ;
     return (
         <div>
 
