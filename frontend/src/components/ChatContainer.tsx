@@ -9,7 +9,7 @@ const ChatContainer = () => {
     }, [selectedUser._id, getMessages]);
 
     if (isMessagesLoading) return <div>Loading...</div>
-    
+
     return (
         <div>
 
