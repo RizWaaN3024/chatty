@@ -29,13 +29,13 @@ const ChatContainer = () => {
             <ChatHeader />
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
                 {messages.map((message) => (
-                    <div 
-                    key={message._id}
-                    className={`chat ${message.senderId === authUser._id ? "chat-end" : "chat-start"}`}
+                    <div
+                        key={message._id}
+                        className={`chat ${message.senderId === authUser._id ? "chat-end" : "chat-start"}`}
                     >
                         <div className="chat-image avatar">
                             <div className="size-10 rounded-full border">
-                                <img 
+                                <img
                                     src={message.senderId === authUser._id ? authUser.profilePic || "/avatar.png" : selectedUser.profilePic || "/avatar.png"}
                                     alt='profile-pic'
                                 />
@@ -46,7 +46,7 @@ const ChatContainer = () => {
                         </div>
                         <div className="chat-bubble flex flex-col">
                             {message.image && (
-                                <img 
+                                <img
                                     src={message.image}
                                     alt="attachment"
                                     className="sm:max-w-[200px] rounded-md mb-2"
